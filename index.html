@@ -1,333 +1,265 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-	<title>Portfólio website</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Otacílio Beleza · Desenvolvedor & Analista de Sistemas</title>
+	<meta name="description" content="Portfólio de Otacílio Beleza — Desenvolvedor e Analista de Sistemas, pós-graduado em Inteligência Artificial. IA aplicada, dados, desenvolvimento web e infraestrutura.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="hero">
-		<nav>
-			<h2 class="logo">Portfó<span>lio</span></h2>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#sobre">Sobre</a></li>
-				<li><a href="#projetos">Projetos</a></li>
-				<li><a href="#Soft">Soft Skills</a></li>
-				<li><a href="#Hard">Hard Skills</a></li>				
-			</ul>			
-		</nav>
 
-		<div class="content">
-			<h4>Olá, meu nome é</h4>
-			<h1>Otacílio <span>Beleza</span></h1>
-			<h3>Sou Desenvolvedor e Analista de Sistemas.</h3>			
+	<!-- ===== Navegação ===== -->
+	<header class="nav" id="topo">
+		<div class="nav-inner">
+			<a href="#topo" class="logo">Otacílio<span>.dev</span></a>
+			<nav>
+				<button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+					<span></span><span></span><span></span>
+				</button>
+				<ul class="nav-links">
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#projetos">Projetos</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+			</nav>
 		</div>
-	</div>
+	</header>
 
-	<!----About section start---->
-	<section class="about">
-		<div class="main" name="sobre" id="sobre">
-			<img src="">
-			<div class="about-text">
-				<h2>Sobre mim</h2>
-				<h5>Desenvolvedor <span>& Analista de Sistemas</span></h5>
-				<p>Tenho 35 anos, sou apaixonado por dados e tecnologia, possuo experiência no desenvolvimento de soluções
-					tecnológicas para clientes corporativos. Estou cursando Análise e Desenvolvimento de Sistemas no
-					Ifro Campus Ariquemes, atualmente trabalho como auxiliar de escritório de contabilidade.
-					Atividades práticas como coleta, preparação e análise automatizada de dados, visualizações
-					profissionais, desenvolvimento de planilhas, Dashboards, modelagem estatística e mecanismos de
-					busca fazem parte do meu dia a dia.
-				</p>
+	<!-- ===== Hero ===== -->
+	<section class="hero">
+		<div class="hero-content reveal">
+			<p class="hero-kicker">Olá, meu nome é</p>
+			<h1>Otacílio <span class="accent">Beleza</span></h1>
+			<h2 class="hero-sub">Desenvolvedor &amp; Analista de Sistemas</h2>
+			<p class="hero-badge">🎓 Pós-graduado em Inteligência Artificial</p>
+			<p class="hero-desc">
+				Construo soluções com <strong>agentes de IA</strong>, <strong>RAG</strong>,
+				<strong>automação de dados</strong> e <strong>infraestrutura</strong> — do protótipo ao deploy.
+			</p>
+			<div class="hero-actions">
+				<a href="#projetos" class="btn btn-primary">Ver projetos</a>
+				<a href="https://github.com/BelezaSystem" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
 			</div>
 		</div>
 	</section>
 
-	<!-----Inicio Projetos----------->
-	<div class="service" name="projetos" id="projetos">
-		<div class="title">
-			<h2>Projetos</h2>
-		</div>
-
-		<div class="box">
-
-			<div class="card">
-				<h5>App Consumo de API Bitcoin</h5>
-				<img src="img/AppApiBTC.png" width="220" height="414">	
-				<div class="pra">
-					<p>App Desenvolvido utilizando framework flutter onde o objetivo foi criar um aplicativo
-					consumindo a API Bitcoin de modo que mostre o valor atual de uma determinada criptomoeda.</p>				
-				</div>							
-			</div>
-
-			<div class="card">
-				<h5>Jogo JokenPo</h5>
-				<img src="img/AppJokenpo.png" width="220" height="414">
-				<div class="pra">
-					<p>App Desenvolvido utilizando framework flutter onde o objetivo era criar o jogo
-					da pedra, papel, tesoura.</p>				
+	<!-- ===== Sobre ===== -->
+	<section class="section" id="sobre">
+		<div class="section-inner">
+			<h2 class="section-title reveal"><span class="accent">01.</span> Sobre mim</h2>
+			<div class="about-grid reveal">
+				<div class="about-text">
+					<p>
+						Sou apaixonado por dados e tecnologia, com experiência no desenvolvimento de soluções
+						tecnológicas para clientes corporativos. <strong>Pós-graduado em Inteligência
+						Artificial</strong> e graduado em <strong>Análise e Desenvolvimento de
+						Sistemas</strong> pelo IFRO — Campus Ariquemes/RO.
+					</p>
+					<p>
+						Meu foco é <strong>IA aplicada a problemas reais</strong>: desenvolvo agentes
+						conversacionais com ferramentas estruturadas, pipelines de <strong>RAG</strong> sobre
+						documentos em português e integrações com <strong>LLMs</strong> usando LangChain.
+						Isso se soma à coleta, preparação e análise automatizada de dados, desenvolvimento
+						de aplicações web e administração de <strong>infraestrutura de redes e serviços
+						em Docker</strong>.
+					</p>
+					<p>
+						Gosto de transformar problemas reais em ferramentas simples e bem documentadas.
+					</p>
 				</div>
-			</div>	
-
-			<div class="card">
-				<h5>Consumo Api Cnpj + Api Googe Maps</h5>
-				<img src="img/AppCnpj_Maps.png" width="220" height="414">
-				<div class="pra">
-					<p>App Desenvolvido utilizando framework flutter onde o objetivo foi criar um aplicativo consumindo
-					uma API de minha escolha porém integrando com api do google maps, api de minha escolha foi do
-				site da receita federal.</p>				
-				</div>
-			</div>	
-		</div>
-
-		<div class="box">
-			<div class="card">
-				<h5>Aluguel de Bikes</h5>
-				<img src="img/AppBikes.png" width="220" height="414">
-				<div class="pra">
-					<p>App Desenvolvido utilizando framework flutter onde o objetivo foi criar app para
-					aluguel de bicicletas.</p>				
-				</div>
-			</div>
-
-			<div class="card">
-				<h5>App Semelhante ao WhatsApp</h5>
-				<img src="img/AppWhats.png" width="220" height="414">
-				<div class="pra">
-					<p>App Desenvolvido utilizando framework flutter onde o objetivo foi criar um app semelhante
-						ao Whatsapp, com tela de login e integração com Firebase.</p>
-				</div>
-			</div>
-			
-		</div>
-
-		<div class="box">
-			<div class="card">
-				<h5>Site Container Loc</h5>
-				<img src="img/siteContainerloc.png" width="320" height="217">
-				<div class="pra">
-					<p>Site Desenvolvido utilizando framework django, para uma empresa de vendas e locação de
-					containeres.</p>				
-				</div>
-			</div>
-
-			<div class="card">
-				<h5>Site Livraria</h5>
-				<img src="img/siteLivraria.png" width="320" height="217">
-				<div class="pra">
-					<p>Site Desenvolvido utilizando framework django, onde o objetivo era criar uma aplicação
-					para registro e controle geral de livros.</p>
-				</div>
-			</div>
-
-			<div class="card">
-				<h5>Site MidiaKadosh</h5>
-				<img src="img/siteMidiaKadosh.png" width="320" height="217">
-				<div class="pra">
-					<p>Site Desenvolvido utilizando framework django para a equipe de midia da igreja missão kadosh.</p>			
-				</div>
+				<ul class="about-highlights">
+					<li><span class="accent">▸</span> Pós-graduação em Inteligência Artificial</li>
+					<li><span class="accent">▸</span> Graduação em Análise e Desenvolvimento de Sistemas — IFRO, Campus Ariquemes/RO</li>
+					<li><span class="accent">▸</span> IA aplicada: agentes, RAG e integrações com LLMs</li>
+					<li><span class="accent">▸</span> Dados: ETL, análise e dashboards</li>
+					<li><span class="accent">▸</span> Web: APIs, front-end e integrações</li>
+					<li><span class="accent">▸</span> Infra: Docker, redes e servidores</li>
+				</ul>
 			</div>
 		</div>
-	</div> <!-----Final Projetos----------->
+	</section>
 
-	<!-----Soft Skills----------->
+	<!-- ===== Projetos ===== -->
+	<section class="section section-alt" id="projetos">
+		<div class="section-inner">
+			<h2 class="section-title reveal"><span class="accent">02.</span> Projetos em destaque</h2>
 
+			<div class="projects-grid">
 
-	<div class="container" name="Soft" id="Soft">
-	    <div class="titulo">Soft Skills</div>
+				<article class="project-card reveal">
+					<div class="project-top">
+						<span class="project-icon">🤖</span>
+						<a class="project-link" href="https://github.com/BelezaSystem/LangChain-Agent-Tools" target="_blank" rel="noopener" aria-label="Ver LangChain Agent Tools no GitHub">
+							<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.3 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.9 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+						</a>
+					</div>
+					<h3>LangChain Agent Tools</h3>
+					<p>Agente conversacional com LangChain e interface em Gradio. Usa ferramentas estruturadas em fluxo de duas etapas — coleta e cálculo — garantindo dados corretos antes de responder.</p>
+					<ul class="project-tags">
+						<li>Python</li><li>LangChain</li><li>Gradio</li><li>LLMs</li>
+					</ul>
+				</article>
 
-	    <div class="bar-1">
-		    <div class="title" style="color: #3CB371">Comunicação</div>
-		    <div class="bar" data-width="90%">
-		      <div class="bar-inner" style="background: #3CB371">		        
-		      </div>
-		      <div class="bar-percent">90%</div>
-		    </div>
-	    </div>
+				<article class="project-card reveal">
+					<div class="project-top">
+						<span class="project-icon">📄</span>
+						<a class="project-link" href="https://github.com/BelezaSystem/pdf-qa-tabular" target="_blank" rel="noopener" aria-label="Ver pdf-qa-tabular no GitHub">
+							<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.3 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.9 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+						</a>
+					</div>
+					<h3>PDF QA Tabular (RAG)</h3>
+					<p>Assistente de perguntas e respostas sobre PDFs em português com foco em textos tabulares, usando LangChain + ChromaDB, extração com pdfplumber e índice auxiliar de linhas.</p>
+					<ul class="project-tags">
+						<li>Python</li><li>LangChain</li><li>ChromaDB</li><li>RAG</li>
+					</ul>
+				</article>
 
-	    <div class="bar-1">
-		    <div class="title" style="color: #FF6347">Trabalho em Equipe</div>
-		    <div class="bar" data-width="90%">
-		      <div class="bar-inner" style="background: #FF6347">	        
-		      </div>
-		      <div class="bar-percent">90%</div>
-		    </div>	    
-	    </div>
+				<article class="project-card reveal">
+					<div class="project-top">
+						<span class="project-icon">🖼️</span>
+						<a class="project-link" href="https://github.com/BelezaSystem/minio-nextjs-image-gallery" target="_blank" rel="noopener" aria-label="Ver minio-nextjs-image-gallery no GitHub">
+							<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.3 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.9 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+						</a>
+					</div>
+					<h3>Galeria de Imagens · MinIO + Next.js</h3>
+					<p>Sistema completo de gerenciamento de imagens com MinIO (compatível com S3) e Next.js. Upload otimizado, compressão de imagens e galeria moderna.</p>
+					<ul class="project-tags">
+						<li>TypeScript</li><li>Next.js</li><li>MinIO</li><li>S3</li>
+					</ul>
+				</article>
 
-	    <div class="bar-1">
-		    <div class="title" style="color: #B8860B">Disciplina</div>
-		    <div class="bar" data-width="85%">
-		      <div class="bar-inner" style="background: #B8860B">	        
-		      </div>
-		      <div class="bar-percent">85%</div>
-		    </div>
-	    </div>
+				<article class="project-card reveal">
+					<div class="project-top">
+						<span class="project-icon">🌐</span>
+						<a class="project-link" href="https://github.com/BelezaSystem/network-sizing-calculator" target="_blank" rel="noopener" aria-label="Ver network-sizing-calculator no GitHub">
+							<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.3 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.9 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+						</a>
+					</div>
+					<h3>Network Sizing Calculator</h3>
+					<p>Ferramenta web para dimensionamento de redes corporativas: cálculo de largura de banda, endereçamento IP e definição de equipamentos.</p>
+					<ul class="project-tags">
+						<li>JavaScript</li><li>Redes</li><li>Ferramenta Web</li>
+					</ul>
+				</article>
 
-	    <div class="bar-1">
-		    <div class="title" style="color: #9400D3">Dedicação</div>
-		    <div class="bar" data-width="95%">
-		      <div class="bar-inner" style="background: #9400D3">	        
-		      </div>
-		      <div class="bar-percent">95%</div>
-		    </div>
-	    </div>
+				<article class="project-card reveal">
+					<div class="project-top">
+						<span class="project-icon">🐳</span>
+						<a class="project-link" href="https://github.com/BelezaSystem/unifi-docker" target="_blank" rel="noopener" aria-label="Ver unifi-docker no GitHub">
+							<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.3 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.9 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+						</a>
+					</div>
+					<h3>UniFi Controller · Docker</h3>
+					<p>Stack Docker para a controladora UniFi Network Application com banco MongoDB dedicado — infraestrutura de rede versionada e reproduzível.</p>
+					<ul class="project-tags">
+						<li>Docker</li><li>Shell</li><li>MongoDB</li><li>UniFi</li>
+					</ul>
+				</article>
 
-	    <div class="bar-1">
-		    <div class="title" style="color: #1a68d3">Foco</div>
-		    <div class="bar" data-width="80%">
-		      <div class="bar-inner" style="background: #1a68d3;">		        
-		      </div>
-		      <div class="bar-percent">80%</div>
-		    </div>
-	    </div>
+				<article class="project-card reveal">
+					<div class="project-top">
+						<span class="project-icon">💬</span>
+						<a class="project-link" href="https://github.com/BelezaSystem/integracao-api-whats" target="_blank" rel="noopener" aria-label="Ver integracao-api-whats no GitHub">
+							<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.3 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.9 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+						</a>
+					</div>
+					<h3>Integração API WhatsApp</h3>
+					<p>Integração com a API do WhatsApp para automação de mensagens e comunicação com clientes via web.</p>
+					<ul class="project-tags">
+						<li>JavaScript</li><li>HTML</li><li>API REST</li>
+					</ul>
+				</article>
 
-	  </div>
+			</div>
 
-	<!-----Hard Skills----------->
-	<div class="container" name="Hard" id="Hard">	    
-	    
-	    <div class="col-md-12">	 
-	    	<div class="titulo">Hard Skills</div>   	
-	    	
-	    	<div class="op1">
-	    	<div class="subtitulo">Front End</div>	    				    
-			    <div class="bar-1">
-				    <div class="title">HTML5</div>
-				    <div class="bar" data-width="85%">
-				      <div class="bar-inner">		        
-				      </div>
-				      <div class="bar-percent">85%</div>
-				    </div>
-			    </div>
+			<p class="projects-more reveal">
+				Projetos anteriores com <strong>Flutter</strong> (apps mobile) e <strong>Django</strong> (sites institucionais)
+				também estão disponíveis no meu
+				<a href="https://github.com/BelezaSystem?tab=repositories" target="_blank" rel="noopener">GitHub →</a>
+			</p>
+		</div>
+	</section>
 
-			    <div class="bar-1">
-				    <div class="title" style="color: #084c61;">CSS3</div>
-				    <div class="bar" data-width="85%">
-				      <div class="bar-inner" style="background: #084c61;">	        
-				      </div>
-				      <div class="bar-percent">85%</div>
-				    </div>	    
-			    </div>
+	<!-- ===== Skills ===== -->
+	<section class="section" id="skills">
+		<div class="section-inner">
+			<h2 class="section-title reveal"><span class="accent">03.</span> Skills</h2>
 
-			    <div class="bar-1">
-				    <div class="title" style="color: #525252;">Javascript</div>
-				    <div class="bar" data-width="75%">
-				      <div class="bar-inner" style="background: #525252;">	        
-				      </div>
-				      <div class="bar-percent">75%</div>
-				    </div>
-			    </div>
+			<div class="skills-grid">
+				<div class="skill-group skill-group-featured reveal">
+					<h3>Inteligência Artificial <span class="skill-badge">Pós-graduação</span></h3>
+					<ul class="chips">
+						<li>Python</li><li>LangChain</li><li>Agentes de IA</li><li>RAG</li>
+						<li>LLMs</li><li>ChromaDB</li><li>Embeddings &amp; Busca Vetorial</li>
+						<li>Machine Learning</li><li>NLP</li><li>Engenharia de Prompts</li><li>Gradio</li>
+					</ul>
+				</div>
 
-			    <div class="bar-1">
-				    <div class="title" style="color: #5a68a5">jQuery</div>
-				    <div class="bar" data-width="75%">
-				      <div class="bar-inner" style="background: #5a68a5;">	        
-				      </div>
-				      <div class="bar-percent">75%</div>
-				    </div>
-			    </div>
+				<div class="skill-group reveal">
+					<h3>Dados</h3>
+					<ul class="chips">
+						<li>ETL</li><li>Análise de Dados</li><li>Dashboards</li>
+						<li>Modelagem Estatística</li><li>SQL</li><li>Web Scraping</li>
+					</ul>
+				</div>
 
-			    <div class="bar-1">
-				    <div class="title" style="color: #1a68d3">Bootstrap 4</div>
-				    <div class="bar" data-width="85%">
-				      <div class="bar-inner" style="background: #1a68d3;">		        
-				      </div>
-				      <div class="bar-percent">85%</div>
-				    </div>
-			    </div>
-	    	</div> <!------Final front end--------->
+				<div class="skill-group reveal">
+					<h3>Desenvolvimento Web</h3>
+					<ul class="chips">
+						<li>JavaScript</li><li>TypeScript</li><li>Next.js</li><li>Vue.js</li>
+						<li>HTML5</li><li>CSS3</li><li>Django</li><li>APIs REST</li>
+					</ul>
+				</div>
 
-	    	<div class="op2">
-	    		<div class="subtitulo">Back End</div>
-	    		<div class="bar-1">
-				    <div class="title" style="color: #00FF7F">Python</div>
-				    <div class="bar" data-width="85%">
-				      <div class="bar-inner" style="background: #00FF7F">		        
-				      </div>
-				      <div class="bar-percent">85%</div>
-				    </div>
-			    </div>
+				<div class="skill-group reveal">
+					<h3>Infra &amp; DevOps</h3>
+					<ul class="chips">
+						<li>Docker</li><li>Linux</li><li>Redes (UniFi)</li><li>MinIO / S3</li>
+						<li>MongoDB</li><li>MySQL</li><li>PostgreSQL</li><li>Git / GitHub</li>
+					</ul>
+				</div>
 
-			    <div class="bar-1">
-				    <div class="title" style="color: #FF8C00">Framework Django</div>
-				    <div class="bar" data-width="80%">
-				      <div class="bar-inner" style="background: #FF8C00">		        
-				      </div>
-				      <div class="bar-percent">80%</div>
-				    </div>
-			    </div>
+				<div class="skill-group reveal">
+					<h3>Mobile &amp; Outros</h3>
+					<ul class="chips">
+						<li>Flutter</li><li>Dart</li><li>Firebase</li><li>PHP</li>
+					</ul>
+				</div>
+			</div>
 
-			    <div class="bar-1">
-				    <div class="title" style="color: #1a68d3">Framework Flutter</div>
-				    <div class="bar" data-width="80%">
-				      <div class="bar-inner" style="background: #1a68d3">		        
-				      </div>
-				      <div class="bar-percent">80%</div>
-				    </div>
-			    </div>			    
+			<div class="soft-skills reveal">
+				<h3>Soft Skills</h3>
+				<ul class="chips chips-soft">
+					<li>Comunicação</li><li>Trabalho em equipe</li><li>Disciplina</li>
+					<li>Dedicação</li><li>Foco</li><li>Resolução de problemas</li>
+				</ul>
+			</div>
+		</div>
+	</section>
 
-			    <div class="bar-1">
-				    <div class="title" style="color: #009ACD">C/C++</div>
-				    <div class="bar" data-width="65%">
-				      <div class="bar-inner" style="background: #009ACD">		        
-				      </div>
-				      <div class="bar-percent">65%</div>
-				    </div>
-			    </div>
-
-			    <div class="bar-1">
-				    <div class="title" style="color: #1967D2">Dart</div>
-				    <div class="bar" data-width="75%">
-				      <div class="bar-inner" style="background: #1967D2">		        
-				      </div>
-				      <div class="bar-percent">75%</div>
-				    </div>
-			    </div>
-
-			    <div class="bar-1">
-				    <div class="title" style="color: #8A2BE2">PHP</div>
-				    <div class="bar" data-width="87%">
-				      <div class="bar-inner" style="background: #8A2BE2">		        
-				      </div>
-				      <div class="bar-percent">87%</div>
-				    </div>
-			    </div>			    
-
-			    <div class="bar-1">
-				    <div class="title" style="color: #FF4500">MySQL</div>
-				    <div class="bar" data-width="80%">
-				      <div class="bar-inner" style="background: #FF4500">		        
-				      </div>
-				      <div class="bar-percent">80%</div>
-				    </div>
-			    </div>
-
-			    <div class="bar-1">
-				    <div class="title" style="color: #8470FF">PostgreSQL</div>
-				    <div class="bar" data-width="75%">
-				      <div class="bar-inner" style="background: #8470FF">		        
-				      </div>
-				      <div class="bar-percent">75%</div>
-				    </div>
-			    </div>    
-
-	    	</div><!------Final Primeira back end--------->
-	    </div><!------Final do bloco--------->
-	  </div>
-	
-
-	<!------footer start--------->
-	<footer>
-		<p>Otacílio Beleza</p>		
-		<div class="social">
-			<a href="https://www.instagram.com/otacilio_beleza/"><i class="fab fa-instagram"></i></a>
-			<a href="https://github.com/BelezaSystem"><i class="fab fa-github"></i></a>
-			<a href="https://www.linkedin.com/in/otacilio-beleza/"><i class="fab fa-linkedin"></i></a>
-		</div>		
+	<!-- ===== Contato / Footer ===== -->
+	<footer class="footer" id="contato">
+		<h2 class="reveal">Vamos conversar?</h2>
+		<p class="reveal">Estou aberto a novos projetos e oportunidades.</p>
+		<div class="social reveal">
+			<a href="https://github.com/BelezaSystem" target="_blank" rel="noopener" aria-label="GitHub">
+				<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6.1-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.3 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.9 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3"/></svg>
+			</a>
+			<a href="https://www.linkedin.com/in/otacilio-beleza/" target="_blank" rel="noopener" aria-label="LinkedIn">
+				<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1a3.7 3.7 0 0 1 3.4-1.9c3.6 0 4.3 2.4 4.3 5.5v6.3zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zm1.8 13.1H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 1 .8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7c0-1-.8-1.7-1.8-1.7z"/></svg>
+			</a>
+			<a href="https://www.instagram.com/otacilio_beleza.system" target="_blank" rel="noopener" aria-label="Instagram">
+				<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8 0 3.2 0 3.6-.1 4.8-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1-3.2 0-3.6 0-4.8-.1-3.3-.1-4.8-1.7-4.9-4.9-.1-1.3-.1-1.6-.1-4.8 0-3.2 0-3.6.1-4.8C2.4 4 4 2.4 7.2 2.3c1.2-.1 1.6-.1 4.8-.1zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg>
+			</a>
+		</div>
+		<p class="footer-note">© <span id="ano"></span> Otacílio Beleza · Feito com HTML, CSS e JavaScript puro</p>
 	</footer>
-    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./js/script.js"></script>    
+
+	<script src="js/script.js"></script>
 </body>
 </html>
