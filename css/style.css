@@ -293,6 +293,51 @@ a{ color:var(--accent); text-decoration:none; }
 	border-radius:999px;
 }
 
+/* Atuação em organizações (repositórios privados — sem links) */
+.org-title{
+	font-size:1.3rem;
+	margin:64px 0 28px;
+	text-align:center;
+	color:var(--text);
+}
+.org-grid{
+	display:grid;
+	grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+	gap:24px;
+}
+.org-card{
+	background:var(--surface);
+	border:1px solid var(--border);
+	border-radius:var(--radius);
+	padding:28px;
+}
+.org-head{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-wrap:wrap;
+	gap:10px;
+	margin-bottom:16px;
+}
+.org-head h4{
+	font-family:var(--font-title);
+	font-size:1.1rem;
+}
+.tag-private{
+	font-size:.72rem;
+	font-weight:600;
+	color:var(--text-muted);
+	border:1px solid var(--border);
+	padding:4px 12px;
+	border-radius:999px;
+	white-space:nowrap;
+}
+.org-card p{
+	color:var(--text-muted);
+	font-size:.92rem;
+	margin-bottom:20px;
+}
+
 .projects-more{
 	margin-top:48px;
 	text-align:center;
